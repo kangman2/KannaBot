@@ -438,7 +438,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @TeamUltroid"
+    reply_pop_up_alert += "\n© @fnixdev"
     buttons = [
         [
             Button.inline(
@@ -497,7 +497,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @TeamUltroid"
+    reply_pop_up_alert += "\n© @fnixdev"
     buttons = [
         [
             Button.inline(
