@@ -97,7 +97,7 @@ async def inline_alive(o):
                 content=InputWebDocument(TLINK, 0, "image/jpg", []),
             )
         ]
-        await o.answer(RES, switch_pm=f"👥 ULTROID PORTAL", switch_pm_param="start")
+        await o.answer(RES, switch_pm=f"👥 KANNABOT PORTAL", switch_pm_param="start")
 
 
 @in_pattern("ultd")

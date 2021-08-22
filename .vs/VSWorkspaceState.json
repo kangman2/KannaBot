@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\strings",
-    "\\strings\\strings",
-    "\\vcbot"
+    "\\plugins",
+    "\\src\\ecmaHelper"
   ],
-  "SelectedNode": "\\strings\\strings\\en.yml",
+  "SelectedNode": "\\.env.sample",
   "PreviewInSolutionExplorer": false
 }
