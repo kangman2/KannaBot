@@ -81,9 +81,9 @@ async def ultroid(event):
             u = await event.client.get_entity(event.chat_id)
             if not udB.get("STARTMSG"):
                 if udB.get("PMBOT") == "True":
-                    ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
+                    ok = "`Você pode entrar em contato com meu mestre usando este bot!!\nEnvie sua mensagem, vou entregá-la ao mestre.`"
                 await event.reply(
-                    f"Hey there [{get_display_name(u)}](tg://user?id={u.id}), this is Ultroid Assistant of [{ultroid_bot.me.first_name}](tg://user?id={ultroid_bot.uid})!\n\n{ok}",
+                    f"Oi [{get_display_name(u)}](tg://user?id={u.id}), este é o Kanna Assistente de [{ultroid_bot.me.first_name}](tg://user?id={ultroid_bot.uid})!\n\n{ok}",
                     buttons=[Button.inline("Info.", data="ownerinfo")],
                 )
             else:
