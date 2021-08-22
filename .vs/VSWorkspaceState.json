@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\plugins",
-    "\\src\\ecmaHelper"
+    ""
   ],
-  "SelectedNode": "\\.env.sample",
+  "SelectedNode": "\\strings",
   "PreviewInSolutionExplorer": false
 }
