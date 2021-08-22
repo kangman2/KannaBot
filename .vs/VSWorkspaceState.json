@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\strings\\strings"
+    "\\strings",
+    "\\strings\\strings",
+    "\\vcbot"
   ],
-  "SelectedNode": "\\app.json",
+  "SelectedNode": "\\strings\\strings\\en.yml",
   "PreviewInSolutionExplorer": false
 }
