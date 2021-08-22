@@ -381,7 +381,7 @@ async def _(e):
 async def _(e):
     if not e.out and not is_fullsudo(e.sender_id):
         return await eor(e, "`This Command Is Sudo Restricted.`")
-    xx = await eor(e, "`Gbanning...`")
+    xx = await eor(e, "`Aplicando Ban Global...`")
     reason = ""
     if e.reply_to_msg_id:
         userid = (await e.get_reply_message()).sender_id
@@ -403,17 +403,17 @@ async def _(e):
         except IndexError:
             reason = ""
     else:
-        return await eod(xx, "`Reply to some msg or add their id.`", tome=5)
+        return await eod(xx, "`Responda a alguma mensagem ou adicione um id.`", tome=5)
     name = (await e.client.get_entity(userid)).first_name
     chats = 0
     if userid == ultroid_bot.uid:
         return await eod(xx, "`I can't gban myself.`", time=3)
     if str(userid) in DEVLIST:
-        return await eod(xx, "`I can't gban my Developers.`", time=3)
+        return await eod(xx, "`Não consigo usar o gban para meus mestres.`", time=3)
     if is_gbanned(userid):
         return await eod(
             xx,
-            "`User is already gbanned and added to gbanwatch.`",
+            "`O usuário já foi banido e adicionado ao gbanwatch.`",
             time=4,
         )
     async for ggban in e.client.iter_dialogs():
@@ -429,9 +429,9 @@ async def _(e):
         await e.client(BlockRequest(int(userid)))
     except Exception as ex:
         return await eor(xx, str(ex))
-    gb_msg = f"**#Gbanned** [{name}](tg://user?id={userid}) `in {chats} chats and added to gbanwatch!`"
+    gb_msg = f"**#Gban**\n`Usuario` [{name}](tg://user?id={userid}) `foi banido em {chats} chats e adicionado a lista gbanwatch`"
     if reason != "":
-        gb_msg += f"\n**Reason** - {reason}"
+        gb_msg += f"\n**Motivo** - {reason}"
     await xx.edit(gb_msg)
 
 
