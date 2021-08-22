@@ -24,14 +24,14 @@ if CL:
 
 @ultroid_cmd(pattern="update$")
 async def _(e):
-    xx = await eor(e, "`Checking for updates...`")
+    xx = await eor(e, "`Checando Atualizações...`")
     m = await updater()
     branch = (Repo.init()).active_branch
     if m:
         x = await asst.send_file(
             int(udB.get("LOG_CHANNEL")),
             ULTPIC,
-            caption="• **Update Available** •",
+            caption="• **Atualização Disponivel** •",
             force_document=False,
             buttons=Button.inline("Changelogs", data="changes"),
         )
@@ -46,7 +46,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/fnixdev/KannaBot/tree/{branch}">[{branch}]</a></strong>',
+            f'<code>Seu BOT esta atualizado em </code><strong><a href="https://github.com/fnixdev/KannaBot/tree/{branch}">[{branch}]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )
