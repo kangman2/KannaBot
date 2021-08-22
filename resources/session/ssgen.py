@@ -77,25 +77,25 @@ def telethon_session():
     # logging in
     try:
         with TelegramClient(StringSession(), API_ID, API_HASH) as ultroid:
-            print("Generating a user session for Ultroid...")
+            print("Gerando uma sessão de usuário para KanaBot...")
             ult = ultroid.send_message(
                 "me",
-                f"**ULTROID** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Do not share this anywhere!**",
+                f"**KANNA** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Não compartilhe isso em nenhum lugar!**",
             )
             print(
-                "Your SESSION has been generated. Check your telegram saved messages!"
+                "Sua SESSION foi gerada. Verifique suas mensagens salvas do telegrama!"
             )
             exit(0)
     except ApiIdInvalidError:
         print(
-            "Your API ID/API HASH combination is invalid. Kindly recheck.\nQuitting..."
+            "Sua combinação API ID / API HASH é inválida. Verifique novamente.\nSaindo..."
         )
         exit(0)
     except ValueError:
-        print("API HASH must not be empty!\nQuitting...")
+        print("O HASH da API não deve estar vazio! \nSaindo...")
         exit(0)
     except PhoneNumberInvalidError:
-        print("The phone number is invalid!\nQuitting...")
+        print("O número de telefone é inválido!\nSaindo...")
         exit(0)
 
 
@@ -115,14 +115,14 @@ def pyro_session():
 
     # generate a session
     API_ID, API_HASH = get_api_id_and_hash()
-    print("Enter phone number when asked.\n\n")
+    print("Digite o número de telefone quando solicitado.\n\n")
     with Client(":memory:", api_id=API_ID, api_hash=API_HASH) as pyro:
         ss = pyro.export_session_string()
         pyro.send_message(
             "me",
-            f"`{ss}`\n\nAbove is your Pyrogram Session String for @TheUltroid music bot. **DO NOT SHARE it.**",
+            f"`{ss}`\n\nAcima está o seu Pyrogram Session String para o bot de música. **NÃO COMPARTILHE.**",
         )
-        print("Session has been sent to your saved messages!")
+        print("A sessão foi enviada para suas mensagens salvas!")
         exit(0)
 
 
@@ -132,7 +132,7 @@ def main():
     try:
         type_of_ss = int(
             input(
-                "\nWhich session do you want to generate?\n1. User Session.\n2. VC Session.\n\nEnter choice:  "
+                "\nQual sessão você deseja gerar?\n1. User Session.\n2. Music Session.\n\nDigite a escolha:  "
             )
         )
     except Exception as e:
