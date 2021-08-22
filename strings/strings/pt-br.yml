@@ -53,7 +53,7 @@ alive_1: "**Kanna Userbot...**\n\n
 ▫ UpTime - `{}`\n
 ▫️ Python - `{}`\n
 ▫️ Telethon - `{}`\n
-▫️ Branch - `privado`\n
+▫️ Branch - `{}`\n
 ◇─◇──◇────◇────◇──◇─◇"
 log: "**Heroku** Ultroid Logs.\nColado [aqui]({}) também!"
 ping: "**Pong !!** `{}ms`\n**Uptime** - `{}`"
