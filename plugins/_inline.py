@@ -58,10 +58,10 @@ _main_help_menu = [
 
 SUP_BUTTONS = [
     [
-        Button.url("Repo", url="https://github.com/TeamUltroid/Ultroid"),
+        Button.url("Repo", url="https://github.com/fnixdev/KannaBot"),
         Button.url("Addons", url="https://github.com/TeamUltroid/UltroidAddons"),
     ],
-    [Button.url("Support", url="t.me/UltroidSupport")],
+    [Button.url("Suporte", url="t.me/fnixdev")],
 ]
 
 # --------------------BUTTONS--------------------#
