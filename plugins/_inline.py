@@ -126,7 +126,7 @@ async def _(event):
     link = "https://hastebin.com/"
     result = event.builder.article(
         title="Paste",
-        text="Pᴀsᴛᴇᴅ Tᴏ Hᴀsᴛᴇʙɪɴ!",
+        text="ᴄᴏʟᴀᴅᴏ ᴇᴍ ʜᴀsᴛᴇʙɪɴ!",
         buttons=[
             [
                 Button.url("HasteBin", url=f"{link}{ok}"),
@@ -163,7 +163,7 @@ async def setting(event):
                 Button.inline("•Rᴇsᴛᴀʀᴛ•", data="rstrt"),
                 Button.inline("•Uᴘᴅᴀᴛᴇ•", data="doupdate"),
             ],
-            [Button.inline("« Bᴀᴄᴋ", data="open")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="open")],
         ],
     )
 
@@ -190,7 +190,7 @@ async def _(event):
             file="ultroid_updates.txt",
             buttons=[
                 [Button.inline("• Uᴘᴅᴀᴛᴇ Nᴏᴡ •", data="updatenow")],
-                [Button.inline("« Bᴀᴄᴋ", data="ownr")],
+                [Button.inline("« ᴠᴏʟᴛᴀʀ", data="ownr")],
             ],
         )
         remove(f"ultroid_updates.txt")
@@ -200,7 +200,7 @@ async def _(event):
             changelog_str,
             buttons=[
                 [Button.inline("Update Now", data="updatenow")],
-                [Button.inline("« Bᴀᴄᴋ", data="ownr")],
+                [Button.inline("« ᴠᴏʟᴛᴀʀ", data="ownr")],
             ],
             parse_mode="html",
         )
@@ -276,7 +276,7 @@ async def _(e):
         ],
         [
             Button.inline(
-                "« Bᴀᴄᴋ",
+                "« ᴠᴏʟᴛᴀʀ",
                 data="open",
             ),
         ],
@@ -445,8 +445,8 @@ async def on_plug_in_callback_query_handler(event):
             )
         ],
         [
-            Button.inline("« Bᴀᴄᴋ", data="back"),
-            Button.inline("••Cʟᴏꜱᴇ••", data="close"),
+            Button.inline("« ᴠᴏʟᴛᴀʀ", data="back"),
+            Button.inline("ꜰᴇᴄʜᴀʀ", data="close"),
         ],
     ]
     try:
@@ -504,8 +504,8 @@ async def on_plug_in_callback_query_handler(event):
             )
         ],
         [
-            Button.inline("« Bᴀᴄᴋ", data="buck"),
-            Button.inline("••Cʟᴏꜱᴇ••", data="close"),
+            Button.inline("« ᴠᴏʟᴛᴀʀ", data="buck"),
+            Button.inline("ꜰᴇᴄʜᴀʀ", data="close"),
         ],
     ]
     try:
@@ -561,7 +561,7 @@ def page_num(page_number, loaded_plugins, prefix, type):
                     "« Pʀᴇᴠɪᴏᴜs",
                     data=f"{prefix}_prev({modulo_page})",
                 ),
-                Button.inline("« Bᴀᴄᴋ »", data="open"),
+                Button.inline("« ᴠᴏʟᴛᴀʀ »", data="open"),
                 Button.inline(
                     "Nᴇxᴛ »",
                     data=f"{prefix}_next({modulo_page})",
@@ -571,5 +571,5 @@ def page_num(page_number, loaded_plugins, prefix, type):
     else:
         pairs = pairs[
             modulo_page * number_of_rows : number_of_rows * (modulo_page + 1)
-        ] + [(Button.inline("« Bᴀᴄᴋ »", data="open"),)]
+        ] + [(Button.inline("« ᴠᴏʟᴛᴀʀ »", data="open"),)]
     return pairs

@@ -64,13 +64,13 @@ async def send(eve):
         buttons = [
             [
                 Button.inline(
-                    "« Pᴀsᴛᴇ »",
+                    "« ᴄᴏʟᴀʀ »",
                     data=f"pasta-{plugin}",
                 )
             ],
             [
-                Button.inline("« Bᴀᴄᴋ", data="back"),
-                Button.inline("••Cʟᴏꜱᴇ••", data="close"),
+                Button.inline("« ᴠᴏʟᴛᴀʀ", data="back"),
+                Button.inline("ꜰᴇᴄʜᴀʀ", data="close"),
             ],
         ]
     else:
@@ -79,13 +79,13 @@ async def send(eve):
         buttons = [
             [
                 Button.inline(
-                    "« Pᴀsᴛᴇ »",
+                    "« ᴄᴏʟᴀʀ »",
                     data=f"pasta-{plugin}",
                 )
             ],
             [
-                Button.inline("« Bᴀᴄᴋ", data="buck"),
-                Button.inline("••Cʟᴏꜱᴇ••", data="close"),
+                Button.inline("« ᴠᴏʟᴛᴀʀ", data="buck"),
+                Button.inline("ꜰᴇᴄʜᴀʀ", data="close"),
             ],
         ]
     await eve.edit(file=plugin, thumb=thumb, buttons=buttons)
@@ -114,7 +114,7 @@ async def update(eve):
             repo.__del__()
             return
         await eve.edit(
-            "`Userbot dyno build in progress, please wait for it to complete.`"
+            "`Atualização em andamento, por favor aguarde.`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -129,13 +129,13 @@ async def update(eve):
         try:
             remote.push(refspec=f"HEAD:refs/heads/{ac_br}", force=True)
         except GitCommandError as error:
-            await eve.edit(f"`Here is the error log:\n{error}`")
+            await eve.edit(f"`Aqui está o log de erros:\n{error}`")
             repo.__del__()
             return
-        await eve.edit("`Successfully Updated!\nRestarting, please wait...`")
+        await eve.edit("`Atualizado com sucesso!\nReiniciando, aguarde...`")
     else:
         await eve.edit(
-            "`Userbot dyno build in progress, please wait for it to complete.`"
+            "`Atualização em andamento, por favor aguarde.`"
         )
         try:
             ups_rem.pull(ac_br)
@@ -143,7 +143,7 @@ async def update(eve):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await eve.edit(
-            "`Successfully Updated!\nBot is restarting... Wait for a second!`"
+            "`Atualizado com sucesso!\nReiniciando, aguarde...`"
         )
         execl(sys.executable, sys.executable, "-m", "pyUltroid")
 
@@ -193,13 +193,13 @@ async def _(e):
         raw = "https://nekobin.com/raw/" + key
     if ok.startswith("plugins"):
         buttons = [
-            Button.inline("« Bᴀᴄᴋ", data="back"),
-            Button.inline("••Cʟᴏꜱᴇ••", data="close"),
+            Button.inline("« ᴠᴏʟᴛᴀʀ", data="back"),
+            Button.inline("ꜰᴇᴄʜᴀʀ", data="close"),
         ]
     else:
         buttons = [
-            Button.inline("« Bᴀᴄᴋ", data="buck"),
-            Button.inline("••Cʟᴏꜱᴇ••", data="close"),
+            Button.inline("« ᴠᴏʟᴛᴀʀ", data="buck"),
+            Button.inline("ꜰᴇᴄʜᴀʀ", data="close"),
         ]
     await e.edit(
         f"<strong>Pasted\n     👉<a href={link}>[Link]</a>\n     👉<a href={raw}>[Raw Link]</a></strong>",
@@ -304,7 +304,7 @@ async def _(e):
                 Button.inline("Fᴏʟᴅᴇʀ Iᴅ", data="folderid"),
                 Button.inline("Aᴜᴛʜᴏʀɪsᴇ", data="authorise"),
             ],
-            [Button.inline("« Bᴀᴄᴋ", data="otvars")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="otvars")],
         ],
         link_preview=False,
     )
@@ -314,7 +314,7 @@ async def _(e):
 @owner
 async def otvaar(event):
     await event.edit(
-        "Other Variables to set for @TheUltroid:",
+        "Other Variables to set for KannaBot:",
         buttons=[
             [
                 Button.inline("Tᴀɢ Lᴏɢɢᴇʀ", data="taglog"),
@@ -333,7 +333,7 @@ async def otvaar(event):
                 Button.inline("Sᴇᴛ ɢDʀɪᴠᴇ", data="gdrive"),
             ],
             [Button.inline("Inline Pic", data="inli_pic")],
-            [Button.inline("« Bᴀᴄᴋ", data="setter")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="setter")],
         ],
     )
 
@@ -352,7 +352,7 @@ async def emoji(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("otvars"),
             )
         elif themssg.startswith(("/", HNDLR)):
@@ -384,7 +384,7 @@ async def pluginch(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("otvars"),
             )
         elif themssg.startswith(("/", HNDLR)):
@@ -419,7 +419,7 @@ async def hndlrr(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("otvars"),
             )
         elif len(themssg) > 1:
@@ -448,7 +448,7 @@ async def tagloggrr(e):
         buttons=[
             [Button.inline("SET TAG LOG", data="settag")],
             [Button.inline("DELETE TAG LOG", data="deltag")],
-            [Button.inline("« Bᴀᴄᴋ", data="otvars")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="otvars")],
         ],
     )
 
@@ -476,7 +476,7 @@ async def taglogerr(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("taglog"),
             )
         else:
@@ -495,7 +495,7 @@ async def pmset(event):
         buttons=[
             [Button.inline("Aᴅᴅᴏɴs  Oɴ", data="edon")],
             [Button.inline("Aᴅᴅᴏɴs  Oғғ", data="edof")],
-            [Button.inline("« Bᴀᴄᴋ", data="otvars")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="otvars")],
         ],
     )
 
@@ -530,7 +530,7 @@ async def pmset(event):
         buttons=[
             [Button.inline("Sᴜᴅᴏ Mᴏᴅᴇ  Oɴ", data="onsudo")],
             [Button.inline("Sᴜᴅᴏ Mᴏᴅᴇ  Oғғ", data="ofsudo")],
-            [Button.inline("« Bᴀᴄᴋ", data="otvars")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="otvars")],
         ],
     )
 
@@ -565,7 +565,7 @@ async def sfban(event):
         buttons=[
             [Button.inline("FBᴀɴ Gʀᴏᴜᴘ", data="sfgrp")],
             [Button.inline("Exᴄʟᴜᴅᴇ Fᴇᴅs", data="sfexf")],
-            [Button.inline("« Bᴀᴄᴋ", data="otvars")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="otvars")],
         ],
     )
 
@@ -586,7 +586,7 @@ async def sfgrp(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("sfban"),
             )
         else:
@@ -613,7 +613,7 @@ async def sfexf(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("sfban"),
             )
         else:
@@ -628,12 +628,12 @@ async def sfexf(event):
 @owner
 async def alvcs(event):
     await event.edit(
-        f"Customise your {HNDLR}alive. Choose from the below options -",
+        f"Customize seu {HNDLR}alive. Escolha uma das opções abaixo -",
         buttons=[
             [Button.inline("Aʟɪᴠᴇ Tᴇxᴛ", data="alvtx")],
             [Button.inline("Aʟɪᴠᴇ ᴍᴇᴅɪᴀ", data="alvmed")],
             [Button.inline("Dᴇʟᴇᴛᴇ Aʟɪᴠᴇ Mᴇᴅɪᴀ", data="delmed")],
-            [Button.inline("« Bᴀᴄᴋ", data="setter")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="setter")],
         ],
     )
 
@@ -654,7 +654,7 @@ async def name(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("alvcstm"),
             )
         else:
@@ -684,7 +684,7 @@ async def media(event):
             themssg = response.message.message
             if themssg == "/cancel":
                 return await conv.send_message(
-                    "Operation cancelled!!",
+                    "Operation Cancelado!!",
                     buttons=get_back_button("alvcstm"),
                 )
         except BaseException:
@@ -745,7 +745,7 @@ async def alvcs(event):
                 Button.inline("Dᴇʟᴇᴛᴇ Pᴍ Mᴇᴅɪᴀ", data="delpmmed"),
             ],
             [Button.inline("PMPermit Type", data="pmtype")],
-            [Button.inline("« Bᴀᴄᴋ", data="ppmset")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="ppmset")],
         ],
     )
 
@@ -758,7 +758,7 @@ async def pmtyp(event):
         buttons=[
             [Button.inline("Inline", data="inpm_in")],
             [Button.inline("Normal", data="inpm_no")],
-            [Button.inline("« Bᴀᴄᴋ", data="pmcstm")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmcstm")],
         ],
     )
 
@@ -770,7 +770,7 @@ async def inl_on(event):
     await setit(event, var, "True")
     await event.edit(
         f"Done!! PMPermit type has been set to inline!",
-        buttons=[[Button.inline("« Bᴀᴄᴋ", data="pmtype")]],
+        buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmtype")]],
     )
 
 
@@ -781,7 +781,7 @@ async def inl_on(event):
     await setit(event, var, "False")
     await event.edit(
         f"Done!! PMPermit type has been set to normal!",
-        buttons=[[Button.inline("« Bᴀᴄᴋ", data="pmtype")]],
+        buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmtype")]],
     )
 
 
@@ -801,7 +801,7 @@ async def name(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("pmcstm"),
             )
         else:
@@ -826,7 +826,7 @@ async def name(event):
     m = range(1, 10)
     tultd = [Button.inline(f"{x}", data=f"wrns_{x}") for x in m]
     lst = list(zip(tultd[::3], tultd[1::3], tultd[2::3]))
-    lst.append([Button.inline("« Bᴀᴄᴋ", data="pmcstm")])
+    lst.append([Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmcstm")])
     await event.edit(
         "Select the number of warnings for a user before getting blocked in PMs.",
         buttons=lst,
@@ -866,7 +866,7 @@ async def media(event):
             themssg = response.message.message
             if themssg == "/cancel":
                 return await conv.send_message(
-                    "Operation cancelled!!",
+                    "Operation Cancelado!!",
                     buttons=get_back_button("pmcstm"),
                 )
         except BaseException:
@@ -916,7 +916,7 @@ async def apauto(event):
         buttons=[
             [Button.inline("Aᴜᴛᴏ Aᴘᴘʀᴏᴠᴇ ON", data="apon")],
             [Button.inline("Aᴜᴛᴏ Aᴘᴘʀᴏᴠᴇ OFF", data="apof")],
-            [Button.inline("« Bᴀᴄᴋ", data="pmcstm")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmcstm")],
         ],
     )
 
@@ -928,7 +928,7 @@ async def apon(event):
     await setit(event, var, "True")
     await event.edit(
         f"Done!! AUTOAPPROVE  Started!!",
-        buttons=[[Button.inline("« Bᴀᴄᴋ", data="apauto")]],
+        buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="apauto")]],
     )
 
 
@@ -939,7 +939,7 @@ async def apof(event):
         udB.delete("AUTOAPPROVE")
         return await event.edit(
             "Done! AUTOAPPROVE Stopped!!",
-            buttons=[[Button.inline("« Bᴀᴄᴋ", data="apauto")]],
+            buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="apauto")]],
         )
     except BaseException:
         return await event.edit(
@@ -956,7 +956,7 @@ async def alvcs(event):
         buttons=[
             [Button.inline("PMLOGGER ON", data="pmlog")],
             [Button.inline("PMLOGGER OFF", data="pmlogof")],
-            [Button.inline("« Bᴀᴄᴋ", data="pmcstm")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmcstm")],
         ],
     )
 
@@ -968,7 +968,7 @@ async def pmlog(event):
     await setit(event, var, "True")
     await event.edit(
         f"Done!! PMLOGGER  Started!!",
-        buttons=[[Button.inline("« Bᴀᴄᴋ", data="pml")]],
+        buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="pml")]],
     )
 
 
@@ -979,7 +979,7 @@ async def pmlogof(event):
         udB.delete("PMLOG")
         return await event.edit(
             "Done! PMLOGGER Stopped!!",
-            buttons=[[Button.inline("« Bᴀᴄᴋ", data="pml")]],
+            buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="pml")]],
         )
     except BaseException:
         return await event.edit(
@@ -997,7 +997,7 @@ async def pmset(event):
             [Button.inline("Tᴜʀɴ PMPᴇʀᴍɪᴛ Oɴ", data="pmon")],
             [Button.inline("Tᴜʀɴ PMPᴇʀᴍɪᴛ Oғғ", data="pmoff")],
             [Button.inline("Cᴜsᴛᴏᴍɪᴢᴇ PMPᴇʀᴍɪᴛ", data="pmcstm")],
-            [Button.inline("« Bᴀᴄᴋ", data="setter")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="setter")],
         ],
     )
 
@@ -1009,7 +1009,7 @@ async def pmonn(event):
     await setit(event, var, "True")
     await event.edit(
         f"Done! PMPermit has been turned on!!",
-        buttons=[[Button.inline("« Bᴀᴄᴋ", data="ppmset")]],
+        buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="ppmset")]],
     )
 
 
@@ -1020,7 +1020,7 @@ async def pmofff(event):
     await setit(event, var, "False")
     await event.edit(
         f"Done! PMPermit has been turned off!!",
-        buttons=[[Button.inline("« Bᴀᴄᴋ", data="ppmset")]],
+        buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="ppmset")]],
     )
 
 
@@ -1033,7 +1033,7 @@ async def chbot(event):
             [Button.inline("Cʜᴀᴛ Bᴏᴛ  Oɴ", data="onchbot")],
             [Button.inline("Cʜᴀᴛ Bᴏᴛ  Oғғ", data="ofchbot")],
             [Button.inline("Bᴏᴛ Wᴇʟᴄᴏᴍᴇ", data="bwel")],
-            [Button.inline("« Bᴀᴄᴋ", data="setter")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="setter")],
         ],
         link_preview=False,
     )
@@ -1055,7 +1055,7 @@ async def name(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("chatbot"),
             )
         else:
@@ -1076,7 +1076,7 @@ async def chon(event):
     await setit(event, var, "True")
     await event.edit(
         "Done! Now u Can Chat With People Via This Bot",
-        buttons=[Button.inline("« Bᴀᴄᴋ", data="chatbot")],
+        buttons=[Button.inline("« ᴠᴏʟᴛᴀʀ", data="chatbot")],
     )
 
 
@@ -1087,7 +1087,7 @@ async def chon(event):
     await setit(event, var, "False")
     await event.edit(
         "Done! Chat People Via This Bot Stopped.",
-        buttons=[Button.inline("« Bᴀᴄᴋ", data="chatbot")],
+        buttons=[Button.inline("« ᴠᴏʟᴛᴀʀ", data="chatbot")],
     )
 
 
@@ -1098,7 +1098,7 @@ async def vcb(event):
         f"From This Feature U can play songs in group voice chat\n\n[moreinfo](https://t.me/UltroidUpdates/4)",
         buttons=[
             [Button.inline("VC Sᴇssɪᴏɴ", data="vcs")],
-            [Button.inline("« Bᴀᴄᴋ", data="setter")],
+            [Button.inline("« ᴠᴏʟᴛᴀʀ", data="setter")],
         ],
         link_preview=False,
     )
@@ -1120,7 +1120,7 @@ async def name(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("vcb"),
             )
         else:
@@ -1150,7 +1150,7 @@ async def media(event):
             themssg = response.message.message
             if themssg == "/cancel":
                 return await conv.send_message(
-                    "Operation cancelled!!",
+                    "Operation Cancelado!!",
                     buttons=get_back_button("setter"),
                 )
         except BaseException:

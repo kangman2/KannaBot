@@ -36,7 +36,7 @@ async def rmbgapi(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("apiset"),
             )
         else:
@@ -61,7 +61,7 @@ async def rmbgapi(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("apiset"),
             )
         else:
@@ -86,7 +86,7 @@ async def rmbgapi(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("apiset"),
             )
         else:

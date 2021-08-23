@@ -16,38 +16,38 @@ from plugins import *
 from . import *
 
 Owner_info_msg = f"""
-<strong>Owner</strong> - {OWNER_NAME}
-<stong>OwnerID</strong> - <code>{OWNER_ID}</code>
+<strong>Dono</strong> - {OWNER_NAME}
+<stong>ID</strong> - <code>{OWNER_ID}</code>
 
-<strong>Message Forwards</strong> - {udB.get("PMBOT")}
+<strong>Encaminhamento de mensagens</strong> - {udB.get("PMBOT")}
 
-<stong>Kanna <a href=https://github.com/fnixdev/KannaBot>[v{ultroid_version}]</a>, powered by @fnixdev</strong>
+<stong><a href=https://t.me/kannabotup/>[KannaBot]</a>, kang by @fnixdev</strong>
 """
 
 _settings = [
     [
-        Button.inline("API Kᴇʏs", data="apiset"),
-        Button.inline("Pᴍ Bᴏᴛ", data="chatbot"),
+        Button.inline("ᴄʜᴀᴠᴇs ᴀᴘɪ", data="apiset"),
+        Button.inline("ᴘᴍ ʙᴏᴛ", data="chatbot"),
     ],
     [
-        Button.inline("Aʟɪᴠᴇ", data="alvcstm"),
-        Button.inline("PᴍPᴇʀᴍɪᴛ", data="ppmset"),
+        Button.inline("ᴀʟɪᴠᴇ", data="alvcstm"),
+        Button.inline("ᴘᴍᴘᴇʀᴍɪᴛ", data="ppmset"),
     ],
-    [Button.inline("Fᴇᴀᴛᴜʀᴇs", data="otvars")],
-    [Button.inline("VC Sᴏɴɢ Bᴏᴛ", data="vcb")],
-    [Button.inline("« Bᴀᴄᴋ", data="mainmenu")],
+    [Button.inline("ʀᴇᴄᴜʀsᴏs", data="otvars")],
+    [Button.inline("ᴍᴜsɪᴄ ʙᴏᴛ", data="vcb")],
+    [Button.inline("« ᴠᴏʟᴛᴀʀ", data="mainmenu")],
 ]
 
 _start = [
     [
-        Button.inline("Lᴀɴɢᴜᴀɢᴇ 🌐", data="lang"),
-        Button.inline("Sᴇᴛᴛɪɴɢs ⚙️", data="setter"),
+        Button.inline("ɪᴅɪᴏᴍᴀ 🌐", data="lang"),
+        Button.inline("ᴄᴏɴꜰɪɢ ⚙️", data="setter"),
     ],
     [
-        Button.inline("Sᴛᴀᴛs ✨", data="stat"),
-        Button.inline("Bʀᴏᴀᴅᴄᴀsᴛ 📻", data="bcast"),
+        Button.inline("ᴇsᴛᴀᴛɪ́sᴛɪᴄᴀs ✨", data="stat"),
+        Button.inline("ʙʀᴏᴀᴅᴄᴀsᴛ 📻", data="bcast"),
     ],
-    [Button.inline("TɪᴍᴇZᴏɴᴇ 🌎", data="tz")],
+    [Button.inline("ꜰᴜsᴏ ʜᴏʀᴀ́ʀɪᴏ 🌎", data="tz")],
 ]
 
 
@@ -97,7 +97,7 @@ async def ultroid(event):
             name = get_display_name(event.sender_id)
             if event.pattern_match.group(1) == "set":
                 await event.reply(
-                    "Choose from the below options -",
+                    "Escolha uma das opções abaixo -",
                     buttons=_settings,
                 )
             else:
@@ -122,7 +122,7 @@ async def ultroid(event):
 @owner
 async def botstat(event):
     ok = len(get_all_users())
-    msg = """Ultroid Assistant - Stats
+    msg = """Kanna Assistente - Stats
 Total Users - {}""".format(
         ok,
     )
@@ -136,17 +136,17 @@ async def bdcast(event):
     await event.edit(f"Broadcast to {len(ok)} users.")
     async with event.client.conversation(OWNER_ID) as conv:
         await conv.send_message(
-            "Enter your broadcast message.\nUse /cancel to stop the broadcast.",
+            "Digite sua mensagem de transmissão.\nUse /cancel para parar a transmissão.",
         )
         response = conv.wait_event(events.NewMessage(chats=OWNER_ID))
         response = await response
         themssg = response.message.message
         if themssg == "/cancel":
-            return await conv.send_message("Cancelled!!")
+            return await conv.send_message("Cancelado!!")
         else:
             success = 0
             fail = 0
-            await conv.send_message(f"Starting a broadcast to {len(ok)} users...")
+            await conv.send_message(f"Iniciando transmissão para {len(ok)} users...")
             start = datetime.now()
             for i in ok:
                 try:
@@ -169,7 +169,7 @@ Failed for {fail} user(s).""",
 @owner
 async def setting(event):
     await event.edit(
-        "Choose from the below options -",
+        "Escolha uma das opções abaixo -",
         buttons=_settings,
     )
 
@@ -190,7 +190,7 @@ async def timezone_(event):
         themssg = response.message.message
         if themssg == "/cancel":
             return await conv.send_message(
-                "Cancelled!!",
+                "Cancelado!!",
                 buttons=get_back_button("mainmenu"),
             )
         else:
