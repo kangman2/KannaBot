@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\plugins"
+    "\\assistant\\manager",
+    "\\assistant\\pmbot",
+    "\\resources\\session",
+    "\\src",
+    "\\strings\\strings",
+    "\\vcbot"
   ],
+  "SelectedNode": "\\src\\ecmaHelper",
   "PreviewInSolutionExplorer": false
 }

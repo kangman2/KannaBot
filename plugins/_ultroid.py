@@ -10,7 +10,7 @@ from . import *
 REPOMSG = """
 • **KANNA USERBOT** •\n
 • Repo - [Clique Aqui](https://github.com/fnixdev/KannaBot)
-• Addons - [Clique Aqui](https://github.com/TeamUltroid/UltroidAddons)
+• Addons - [Clique Aqui](https://github.com/fnixdev/KannaAddons)
 • Suporte - @fnixdev
 """
 
