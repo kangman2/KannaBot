@@ -57,7 +57,7 @@ async def updava(event):
     await asst.send_file(
         int(udB.get("LOG_CHANNEL")),
         ULTPIC,
-        caption="• **Update Available** •",
+        caption="• **Atualização Disponivel** •",
         force_document=False,
         buttons=Button.inline("Changelogs", data="changes"),
     )

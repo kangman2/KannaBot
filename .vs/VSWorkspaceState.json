@@ -1,13 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assistant\\manager",
-    "\\assistant\\pmbot",
-    "\\resources\\session",
-    "\\src",
-    "\\strings\\strings",
-    "\\vcbot"
+    "\\plugins",
+    "\\strings",
+    "\\strings\\strings"
   ],
-  "SelectedNode": "\\src\\ecmaHelper",
+  "SelectedNode": "\\plugins\\pmpermit.py",
   "PreviewInSolutionExplorer": false
 }
