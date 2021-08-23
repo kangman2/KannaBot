@@ -224,16 +224,16 @@ if sett == "True":
                     f"Recebendo Mensagem de {mention} com {wrn}/{WARNS} avisos!",
                     buttons=[
                         Button.inline("Aprovar Usuario", data=f"approve_{user.id}"),
-                        Button.inline("Block", data=f"block_{user.id}"),
+                        Button.inline("Bloquear Usuario", data=f"block_{user.id}"),
                     ],
                 )
             except KeyError:
                 _not_approved[user.id] = await asst.send_message(
                     int(udB.get("LOG_CHANNEL")),
-                    f"Recebendo Mensagem de {mention} com {wrn}/{WARNS} avisos!",
+                    f"Recebendo Mensagem de {mention} com 1/{WARNS} avisos!",
                     buttons=[
                         Button.inline("Aprovar Usuario", data=f"approve_{user.id}"),
-                        Button.inline("Block", data=f"block_{user.id}"),
+                        Button.inline("Bloquear Usuario", data=f"block_{user.id}"),
                     ],
                 )
                 wrn = 1
@@ -401,7 +401,7 @@ if sett == "True":
                     f"#APROVADO\n\n`Usuario: `[{name0}](tg://user?id={uid})",
                     buttons=[
                         Button.inline("Rejeitar Mensagens", data=f"disapprove_{uid}"),
-                        Button.inline("Block", data=f"block_{uid}"),
+                        Button.inline("Bloquear Usuario", data=f"block_{uid}"),
                     ],
                 )
             else:
@@ -431,7 +431,7 @@ if sett == "True":
                         f"#APROVADO\n\n`User: `[{name0}](tg://user?id={uid})",
                         buttons=[
                             Button.inline("Rejeitar Mensagens", data=f"disapprove_{uid}"),
-                            Button.inline("Block", data=f"block_{uid}"),
+                            Button.inline("Bloquear Usuario", data=f"block_{uid}"),
                         ],
                     )
                 except KeyError:
@@ -440,7 +440,7 @@ if sett == "True":
                         f"#APROVADO\n\n`User: `[{name0}](tg://user?id={uid})",
                         buttons=[
                             Button.inline("Rejeitar Mensagens", data=f"disapprove_{uid}"),
-                            Button.inline("Block", data=f"block_{uid}"),
+                            Button.inline("Bloquear Usuario", data=f"block_{uid}"),
                         ],
                     )
             else:
@@ -475,7 +475,7 @@ if sett == "True":
                     f"#DESAPROVADO\n\n[{name0}](tg://user?id={bbb.id}) `foi reprovado para PM.`",
                     buttons=[
                         Button.inline("Aprovar Mensagens", data=f"approve_{aname}"),
-                        Button.inline("Block", data=f"block_{aname}"),
+                        Button.inline("Bloquear Usuario", data=f"block_{aname}"),
                     ],
                 )
             else:
@@ -505,7 +505,7 @@ if sett == "True":
                         f"#DESAPROVADO\n\n[{name0}](tg://user?id={bbb.id}) `was disapproved to PM you.`",
                         buttons=[
                             Button.inline("Aprovar Usuario", data=f"approve_{bbb.id}"),
-                            Button.inline("Block", data=f"block_{bbb.id}"),
+                            Button.inline("Bloquear Usuario", data=f"block_{bbb.id}"),
                         ],
                     )
                 except KeyError:
@@ -514,7 +514,7 @@ if sett == "True":
                         f"#DESAPROVADO\n\n[{name0}](tg://user?id={bbb.id}) `was disapproved to PM you.`",
                         buttons=[
                             Button.inline("Aprovar Usuario", data=f"approve_{bbb.id}"),
-                            Button.inline("Block", data=f"block_{bbb.id}"),
+                            Button.inline("Bloquear Usuario", data=f"block_{bbb.id}"),
                         ],
                     )
             else:
@@ -553,7 +553,7 @@ async def blockpm(block):
         await asst.edit_message(
             int(udB.get("LOG_CHANNEL")),
             _not_approved[user],
-            f"#BLOQUEADO\n\n[{aname.first_name}](tg://user?id={user}) has been **blocked**.",
+            f"#BLOQUEADO\n\n[{aname.first_name}](tg://user?id={user}) foi  **bloqueado**.",
             buttons=[
                 Button.inline("UnBlock", data=f"unblock_{user}"),
             ],
@@ -561,7 +561,7 @@ async def blockpm(block):
     except KeyError:
         _not_approved[user] = await asst.send_message(
             int(udB.get("LOG_CHANNEL")),
-            f"#BLOQUEADO\n\n[{aname.first_name}](tg://user?id={user}) has been **blocked**.",
+            f"#BLOQUEADO\n\n[{aname.first_name}](tg://user?id={user}) foi **bloqueado**.",
             buttons=[
                 Button.inline("UnBlock", data=f"unblock_{user}"),
             ],
@@ -581,22 +581,22 @@ async def unblockpm(unblock):
     try:
         await unblock.client(UnblockRequest(user))
         aname = await unblock.client.get_entity(user)
-        await eor(unblock, f"`{aname.first_name} has been UnBlocked!`")
+        await eor(unblock, f"`{aname.first_name} foi bloqueado!`")
     except Exception as et:
         await eod(unblock, f"ERROR - {str(et)}")
     try:
         await asst.edit_message(
             int(udB.get("LOG_CHANNEL")),
             _not_approved[user],
-            f"#DESBLOQUEADO\n\n[{aname.first_name}](tg://user?id={user}) has been **unblocked**.",
+            f"#DESBLOQUEADO\n\n[{aname.first_name}](tg://user?id={user}) foi **desbloqueado**.",
             buttons=[
-                Button.inline("Block", data=f"block_{user}"),
+                Button.inline("Bloquear Usuario", data=f"block_{user}"),
             ],
         )
     except KeyError:
         _not_approved[user] = await asst.send_message(
             int(udB.get("LOG_CHANNEL")),
-            f"#DESBLOQUEADO\n\n[{aname.first_name}](tg://user?id={user}) has been **unblocked**.",
+            f"#DESBLOQUEADO\n\n[{aname.first_name}](tg://user?id={user}) foi **desbloqueado**.",
             buttons=[
                 Button.inline("Block", data=f"block_{user}"),
             ],
@@ -607,7 +607,7 @@ async def unblockpm(unblock):
 async def list_approved(event):
     xx = await eor(event, get_string("com_1"))
     if udB.get("PMPERMIT") is None:
-        return await eod(xx, "`You haven't approved anyone yet!`")
+        return await eod(xx, "`Você ainda não aprovou ninguém!`")
     users = []
     for i in [int(x) for x in udB.get("PMPERMIT").split(" ")]:
         try:
@@ -635,7 +635,7 @@ async def list_approved(event):
 async def apr_in(event):
     uid = int(event.data_match.group(1).decode("UTF-8"))
     if str(uid) in DEVLIST:
-        await event.edit("It's a dev! Approved!")
+        await event.edit("É um dev! Aprovado!")
     if not is_approved(uid):
         approve_user(uid)
         try:
