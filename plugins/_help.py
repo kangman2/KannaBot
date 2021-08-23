@@ -37,7 +37,7 @@ async def _help(ult):
                 except BaseException:
                     await eod(ult, get_string("help_1").format(plug), time=5)
         except BaseException:
-            await eor(ult, "Error 🤔 occured.")
+            await eor(ult, "Um erro ocorreu 🤔.")
     else:
         tgbot = asst.me.username
         try:
@@ -58,19 +58,19 @@ async def _help(ult):
                 ),
                 buttons=[
                     [
-                        Button.inline("• Pʟᴜɢɪɴs", data="hrrrr"),
-                        Button.inline("• Aᴅᴅᴏɴs", data="frrr"),
+                        Button.inline("Pʟᴜɢɪɴs", data="hrrrr"),
+                        Button.inline("Aᴅᴅᴏɴs", data="frrr"),
                     ],
                     [
-                        Button.inline("Oᴡɴᴇʀ•ᴛᴏᴏʟꜱ", data="ownr"),
-                        Button.inline("Iɴʟɪɴᴇ•Pʟᴜɢɪɴs", data="inlone"),
+                        Button.inline("ꜰᴇʀʀᴀᴍᴇɴᴛᴀs", data="ownr"),
+                        Button.inline("Pʟᴜɢɪɴs Iɴʟɪɴᴇ", data="inlone"),
                     ],
                     [
                         Button.url(
-                            "⚙️Sᴇᴛᴛɪɴɢs⚙️", url=f"https://t.me/{tgbot}?start=set"
+                            "ᴄᴏɴꜰɪɢ", url=f"https://t.me/{tgbot}?start=set"
                         ),
                     ],
-                    [Button.inline("••Cʟᴏꜱᴇ••", data="close")],
+                    [Button.inline("ꜰᴇʜᴄᴀʀ", data="close")],
                 ],
             )
         except rep:

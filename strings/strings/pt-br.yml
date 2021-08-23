@@ -3,6 +3,7 @@ natively: Português
 
 authors:
   - R7Droid Revisão PT-BR(YukkiZx)
+  - fnixdev
 
 # commons
 com_1: "`Processando...`"
@@ -19,10 +20,10 @@ autopic_2: "Nenhum resultado encontrado para `{}`"
 autopic_3: "Tenho uma coleção `{}` relacionado à sua pesquisa !\nIniciando Autopic !"
 
 # inline
-inline_1: "[Sᴜᴘorte Uʟᴛʀᴏɪᴅ](t.me/ultroidsupport)\n\n**Menu De Ajuda {}.\n\nPʟᴜɢɪɴs ~ {}**"
-inline_2: "[Sᴜᴘorte Uʟᴛʀᴏɪᴅ](t.me/ultroidsupport)\n\n**Mᴇɴᴜ Dᴇ Ajuda {}.\n\nExtensões ~ {}**"
-inline_3: "[Sᴜᴘorte Uʟᴛʀᴏɪᴅ](t.me/ultroidsupport)\n\n**Mᴇɴᴜ Dᴇ Ajuda {}.\n\nExtensões ~ {}\n\nDefina **`.setredis Extensões para True`** e REINICIE PARA OBTER EXTENSÕES.**"
-inline_4: "** Bᴏᴛ De {}\n\nMenu Principal\n\nPʟᴜɢɪɴs ~ {}\nExtensões ~ {}\nTᴏᴛᴀʟ de Cᴏᴍᴀɴᴅos ~ {}**"
+inline_1: "[sᴜᴘᴏʀᴛᴇ ᴋᴀɴɴᴀ](t.me/ultroidsupport)\n\n**Menu De Ajuda {}.\n\nPʟᴜɢɪɴs ~ {}**"
+inline_2: "[sᴜᴘᴏʀᴛᴇ ᴋᴀɴɴᴀ](t.me/ultroidsupport)\n\n**Mᴇɴᴜ Dᴇ Ajuda {}.\n\nExtensões ~ {}**"
+inline_3: "[sᴜᴘᴏʀᴛᴇ ᴋᴀɴɴᴀ](t.me/ultroidsupport)\n\n**Mᴇɴᴜ Dᴇ Ajuda {}.\n\nExtensões ~ {}\n\nDefina **`.setredis Extensões para True`** e REINICIE PARA OBTER EXTENSÕES.**"
+inline_4: "** ʙᴏᴛ ᴅᴇ {}\n\nᴍᴇɴᴜ ᴘʀɪɴᴄɪᴘᴀʟ\n\nPʟᴜɢɪɴs ~ {}\nᴀᴅᴅᴏɴs ~ {}\nᴛᴏᴛᴀʟ ᴅᴇ ᴄᴏᴍᴀɴᴅᴏs ~ {}**"
 inline_5: "**O Menu Foi Fechado**"
 
 # tagnotif

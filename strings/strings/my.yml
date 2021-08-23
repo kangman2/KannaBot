@@ -18,13 +18,13 @@ autopic_2: "Tiada keputusan dijumpai `{}`"
 autopic_3: "Mendapat Koleksi `{}` yang berkaitan dengan carian anda! \nMulai Autopic!"
 
 # inline
-inline_1: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
+inline_1: "[ᴋᴀɴɴᴀ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\n
 Pʟᴜɢɪɴs ~ {}**"
-inline_2: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
+inline_2: "[ᴋᴀɴɴᴀ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\n
 Aᴅᴅᴏɴs ~ {}**"
-inline_3: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
+inline_3: "[ᴋᴀɴɴᴀ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\n
 Aᴅᴅᴏɴs ~ {}\n\n
 Buat **`.setredis ADDONS kepada True`** dan memulakan semula untuk dapatkan addon.**"

@@ -18,7 +18,7 @@ from telethon.tl.types import InputBotInlineResult, InputWebDocument
 from . import *
 
 # ================================================#
-notmine = f"This bot is for {OWNER_NAME}"
+notmine = f"Este bot é para {OWNER_NAME}"
 
 TLINK = "https://telegra.ph/file/b46a1c21b0a0c2c99943b.jpg"
 helps = get_string("inline_1")
@@ -43,25 +43,25 @@ else:
 
 _main_help_menu = [
     [
-        Button.inline("• Pʟᴜɢɪɴs", data="hrrrr"),
-        Button.inline("• Aᴅᴅᴏɴs", data="frrr"),
+        Button.inline("Pʟᴜɢɪɴs", data="hrrrr"),
+        Button.inline("Aᴅᴅᴏɴs", data="frrr"),
     ],
     [
-        Button.inline("Oᴡɴᴇʀ•ᴛᴏᴏʟꜱ", data="ownr"),
-        Button.inline("Iɴʟɪɴᴇ•Pʟᴜɢɪɴs", data="inlone"),
+        Button.inline("ꜰᴇʀʀᴀᴍᴇɴᴛᴀs", data="ownr"),
+        Button.inline("Pʟᴜɢɪɴs Iɴʟɪɴᴇ", data="inlone"),
     ],
     [
-        Button.url("⚙️Sᴇᴛᴛɪɴɢs⚙️", url=f"https://t.me/{asst.me.username}?start=set"),
+        Button.url("ᴄᴏɴꜰɪɢ", url=f"https://t.me/{asst.me.username}?start=set"),
     ],
-    [Button.inline("••Cʟᴏꜱᴇ••", data="close")],
+    [Button.inline("ꜰᴇʜᴄᴀʀ", data="close")],
 ]
 
 SUP_BUTTONS = [
     [
-        Button.url("Repo", url="https://github.com/fnixdev/KannaBot"),
-        Button.url("Addons", url="https://github.com/fnixdev/KannaAddons"),
+        Button.url("ʀᴇᴘᴏ", url="https://github.com/fnixdev/KannaBot"),
+        Button.url("ᴀᴅᴅᴏɴs", url="https://github.com/fnixdev/KannaAddons"),
     ],
-    [Button.url("Suporte", url="t.me/fnixdev")],
+    [Button.url("sᴜᴘᴏʀᴛᴇ", url="t.me/fnixdev")],
 ]
 
 # --------------------BUTTONS--------------------#
@@ -72,7 +72,7 @@ SUP_BUTTONS = [
 async def inline_alive(o):
     if len(o.text) == 0:
         b = o.builder
-        MSG = "• **Ultroid Userbot •**"
+        MSG = "• **Kanna Userbot •**"
         uptime = time_formatter((time.time() - start_time) * 1000)
         MSG += f"\n\n• **Uptime** - `{uptime}`\n"
         MSG += f"• **OWNER** - `{OWNER_NAME}`"
@@ -88,7 +88,7 @@ async def inline_alive(o):
                     media=True,
                     buttons=SUP_BUTTONS,
                 ),
-                title="Ultroid Userbot",
+                title="Kanna Userbot",
                 description="Userbot | Telethon",
                 url=TLINK,
                 thumb=WEB0,

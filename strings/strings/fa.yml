@@ -18,13 +18,13 @@ autopic_2: "چیزی برای `{}` پیدا نکردم"
 autopic_3: "یافتم `{}`!\nاز الان ببعد عکس پروفایلت اتوماتیکه... !"
 
 # inline
-inline_1: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
+inline_1: "[ᴋᴀɴɴᴀ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
 **منوی کمکی برای {}.\n\n
 افزونه ها ~ {}**"
-inline_2: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
+inline_2: "[ᴋᴀɴɴᴀ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
 **منوی کمکی برای {}.\n\n
 افزونه های کمکی ~ {}**"
-inline_3: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
+inline_3: "[ᴋᴀɴɴᴀ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)\n\n
 **منوی کمکی برای {}.\n\n
 افزونه های کمکی ~ {}\n\n
 دستور **`.setredis ADDONS True`** رو برای فعال کردن افزونه های کمکی بفرست.**"
