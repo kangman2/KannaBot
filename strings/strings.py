@@ -17,7 +17,7 @@ for file in listdir(strings_folder):
 
 def get_string(key: str) -> Any:
     try:
-        return languages[(udB.get("language") or "en")][key]
+        return languages[(udB.get("language") or "pt-br")][key]
     except KeyError:
         try:
             return languages["pt-br"][key]
