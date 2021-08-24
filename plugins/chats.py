@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}delchat`
     Delete the group this cmd is used in.

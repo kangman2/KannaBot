@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}setgpic <reply to Photo>`
     Set Profile photo of Group.

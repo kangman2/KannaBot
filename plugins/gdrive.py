@@ -5,7 +5,7 @@
 
 
 """
-✘ Commands Available
+✘ Comandos Disponiveis
 
 • `{i}ugdrive <reply/file name>`
     Reply to file to upload on Google Drive.

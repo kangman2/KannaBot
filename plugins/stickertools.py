@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}destroy <reply to animated sticker>`
     To destroy the sticker.

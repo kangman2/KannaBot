@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}mute <reply to msg/ user id>`
     Mute user in current chat.

@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}autopic <search query>`
     Will change your profile pic at defined intervals with pics related to the given topic.

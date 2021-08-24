@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}mediainfo <reply to media>`
    To get info about it.

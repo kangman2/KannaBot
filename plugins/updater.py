@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 • `{i}update`
     See changelogs if any update is available.
 """

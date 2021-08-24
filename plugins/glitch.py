@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 """
 
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 •`{i}glitch <replt to media>`
     gives a glitchy gif.

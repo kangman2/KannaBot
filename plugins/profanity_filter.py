@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 •`{i}addprofanity`
    If someone sends bad word in a chat, Then bot will delete that message.

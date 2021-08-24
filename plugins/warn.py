@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available
+✘ Comandos Disponiveis
 
 •`{i}warn <reply to user> <reason>`
     Gives Warn.

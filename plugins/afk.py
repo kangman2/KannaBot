@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}afk <optional reason>`
     AFK means away from keyboard,

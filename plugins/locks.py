@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}lock <msgs/media/sticker/gif/games/inline/polls/invites/pin/changeinfo>`
     Lock the Used Setting in Used Group.

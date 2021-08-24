@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}addsudo`
     Add Sudo Users by replying to user or using <space> separated userid(s)

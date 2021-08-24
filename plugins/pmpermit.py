@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}a` or `{i}approve`
     Para aprovar alguém no PM.

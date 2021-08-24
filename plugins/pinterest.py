@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}pntrst <link/id>`
     Download and send pinterest pins.

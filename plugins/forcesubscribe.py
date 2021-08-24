@@ -5,7 +5,7 @@
 
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}fsub <chat username><id>`
     Enable ForceSub in Used Chat !

@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}compress <reply to video>`
     optional `crf` and `stream`

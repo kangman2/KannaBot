@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}addsnip <word><reply to a message>`
     add the used word as snip relating to replied message.

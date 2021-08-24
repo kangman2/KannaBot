@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}superfban <reply to user/userid/username>`
     FBan the person across all feds in which you are admin.

@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 •`{i}addnsfw <ban/mute/kick>`
    If someone sends 18+ content it will be deleted and action will be taken.

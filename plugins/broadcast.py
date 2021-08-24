@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available
+✘ Comandos Disponiveis
 
 • `{i}addch <id/reply to list/none>`
     Add chat to database. Adds current chat if no id specified.

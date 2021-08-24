@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}addai <reply to user/give username/userid>`
    Add a AI ChatBot to reply to that user.

@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}poll <question> ; <option> ; <option>`
     Get the Anonymous Poll with Given Options

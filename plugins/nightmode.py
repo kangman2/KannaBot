@@ -5,7 +5,7 @@
 
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 At Night it will turn off everyone permission to send message in  an all groups which you added via `{i}addnight`
 And Turn On auto at morning

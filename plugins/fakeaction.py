@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}ftyping <time/in secs>`
     `Show Fake Typing in current chat. `

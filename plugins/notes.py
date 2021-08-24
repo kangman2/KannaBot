@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}addnote <word><reply to a message>`
     add note in the used chat with replied message and choosen word.

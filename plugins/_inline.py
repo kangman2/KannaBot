@@ -75,7 +75,7 @@ async def inline_alive(o):
         MSG = "• **Kanna Userbot •**"
         uptime = time_formatter((time.time() - start_time) * 1000)
         MSG += f"\n\n• **Uptime** - `{uptime}`\n"
-        MSG += f"• **OWNER** - `{OWNER_NAME}`"
+        MSG += f"• **DONO** - `{OWNER_NAME}`"
         WEB0 = InputWebDocument(
             "https://telegra.ph/file/b46a1c21b0a0c2c99943b.jpg", 0, "image/jpg", []
         )
@@ -233,20 +233,20 @@ async def _(e):
                 same_peer=True,
             ),
             Button.switch_inline(
-                "Mᴏᴅᴅᴇᴅ Aᴘᴘs",
+                "Aᴘᴘs Mᴏᴅs",
                 query="mods minecraft",
                 same_peer=True,
             ),
         ],
         [
             Button.switch_inline(
-                "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ",
-                query="go TeamUltroid",
+                "Pʀᴏᴄᴜʀᴀʀ ɴᴏ Gᴏᴏɢʟᴇ",
+                query="go KannaBot",
                 same_peer=True,
             ),
             Button.switch_inline(
-                "Sᴇᴀʀᴄʜ Oɴ Yᴀʜᴏᴏ",
-                query="yahoo TeamUltroid",
+                "Pʀᴏᴄᴜʀᴀʀ ɴᴏ Yᴀʜᴏᴏ",
+                query="yahoo KannaBot",
                 same_peer=True,
             ),
         ],
@@ -257,8 +257,8 @@ async def _(e):
                 same_peer=True,
             ),
             Button.switch_inline(
-                "YᴏᴜTᴜʙᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ",
-                query="yt Ed Sheeran Perfect",
+                "YᴏᴜTᴜʙᴇ",
+                query="yt 1nonly stay with me",
                 same_peer=True,
             ),
         ],
@@ -414,7 +414,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(
         get_string("inline_5"),
         file=_file_to_replace,
-        buttons=Button.inline("Oᴘᴇɴ Aɢᴀɪɴ", data="open"),
+        buttons=Button.inline("ᴀʙʀɪʀ ɴᴏᴠᴀᴍᴇɴᴛᴇ", data="open"),
     )
 
 
@@ -478,13 +478,13 @@ async def on_plug_in_callback_query_handler(event):
     except BaseException:
         try:
             for u in CMD_HELP[plugin_name]:
-                help_string = f"Plugin Name-{plugin_name}\n\n✘ Commands Available-\n\n"
+                help_string = f"Plugin Name-{plugin_name}\n\n✘ Comandos Disponiveis-\n\n"
                 help_string += str(CMD_HELP[plugin_name])
         except BaseException:
             try:
                 if plugin_name in LIST:
                     help_string = (
-                        f"Plugin Name-{plugin_name}\n\n✘ Commands Available-\n\n"
+                        f"Plugin Name-{plugin_name}\n\n✘ Comandos Disponiveis-\n\n"
                     )
                     for d in LIST[plugin_name]:
                         help_string += HNDLR + d
@@ -499,7 +499,7 @@ async def on_plug_in_callback_query_handler(event):
     buttons = [
         [
             Button.inline(
-                "« Sᴇɴᴅ Pʟᴜɢɪɴ »",
+                "« ᴇɴᴠɪᴀʀ ᴘʟᴜɢɪɴ »",
                 data=f"sndplug_{(event.data).decode('UTF-8')}",
             )
         ],
@@ -558,12 +558,12 @@ def page_num(page_number, loaded_plugins, prefix, type):
         ] + [
             (
                 Button.inline(
-                    "« Pʀᴇᴠɪᴏᴜs",
+                    "« ᴀɴᴛᴇʀɪᴏʀ",
                     data=f"{prefix}_prev({modulo_page})",
                 ),
                 Button.inline("« ᴠᴏʟᴛᴀʀ »", data="open"),
                 Button.inline(
-                    "Nᴇxᴛ »",
+                    "ᴘʀᴏxɪᴍᴏ »",
                     data=f"{prefix}_next({modulo_page})",
                 ),
             ),

@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 •`{i}schedule <text/reply to msg> <time>`
     In time u can use second as number, or like 1h or 1m

@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available
+✘ Comandos Disponiveis
 
 • `{i}autocorrect`
     To on/off Autocorrect Feature.

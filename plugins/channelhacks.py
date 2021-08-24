@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available
+✘ Comandos Disponiveis
 
 
 🔹 `{i}shift <from channel> | <to channel>`

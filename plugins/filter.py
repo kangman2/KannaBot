@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}addfilter <word><reply to a message>`
     add the used word as filter relating to replied message.

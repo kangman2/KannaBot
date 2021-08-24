@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}carbon <text/reply to msg/reply to document>`
     Carbonise the text with default settings.

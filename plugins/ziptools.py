@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available
+✘ Comandos Disponiveis
 
 • `{i}zip <reply to file>
     zip the replied file

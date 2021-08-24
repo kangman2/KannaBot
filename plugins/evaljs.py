@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 • `{i}evaljs <javaScriptCommands>`
     Evaluate JavaScript code and upload.
 """

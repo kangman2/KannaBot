@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 ---- Welcomes ----
 • `{i}setwelcome <message/reply to message>`

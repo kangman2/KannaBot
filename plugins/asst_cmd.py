@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 •`{i}addcmd <new cmd> <reply>`
    It will set new cmd for your assistant bot with that reply message.

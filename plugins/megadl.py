@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 •`{i}megadl <link>`
   It Downloads and Upload Files from mega.nz links.

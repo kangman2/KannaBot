@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • {i}unsplash <search query> ; <no of pics>
     Unsplash Image Search.

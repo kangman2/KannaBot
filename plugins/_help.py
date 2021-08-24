@@ -23,12 +23,12 @@ async def _help(ult):
                 output += "\n© @fnixdev"
                 await eor(ult, output)
             elif plug in CMD_HELP:
-                kk = f"Plugin Name-{plug}\n\n✘ Commands Available -\n\n"
+                kk = f"Plugin Name-{plug}\n\n✘ Comandos Disponiveis -\n\n"
                 kk += str(CMD_HELP[plug])
                 await eor(ult, kk)
             else:
                 try:
-                    x = f"Plugin Name-{plug}\n\n✘ Commands Available -\n\n"
+                    x = f"Plugin Name-{plug}\n\n✘ Comandos Disponiveis -\n\n"
                     for d in LIST[plug]:
                         x += HNDLR + d
                         x += "\n"

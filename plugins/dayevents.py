@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}eod` or `{i}eod <dd/mm>`
     `Get Event of the Day`

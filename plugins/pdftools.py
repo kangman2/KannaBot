@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}pdf <page num> <reply to pdf file>`
     Extract nd Send page as a Image.(note-: For Extraction all pages just use .pdf)

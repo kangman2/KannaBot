@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 • `{i}botecho text (optional -\n[button_text_1](https://t.me/TheUltroid)\n[button_text_2](https://t.me/TeamUltroid))`
    Send a message from your assistant bot.

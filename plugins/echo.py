@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available
+✘ Comandos Disponiveis
 
 •`{i}addecho <reply to anyone>`
    Start Auto Echo message of Replied user.

@@ -4,7 +4,7 @@
 # Editado por @fnixdev
 
 """
-✘ Commands Available -
+✘ Comandos Disponiveis -
 
 •`{i}addclean`
     Clean all Upcoming action msg in added chat like someone joined/left/pin etc.
