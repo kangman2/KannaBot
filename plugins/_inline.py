@@ -241,7 +241,7 @@ async def _(e):
         [
             Button.switch_inline(
                 "Pʀᴏᴄᴜʀᴀʀ ɴᴏ Gᴏᴏɢʟᴇ",
-                query="go KannaBot",
+                query="KannaBot github",
                 same_peer=True,
             ),
             Button.switch_inline(

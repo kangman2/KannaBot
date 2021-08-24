@@ -3,7 +3,7 @@
 # 
 # Editado por @fnixdev
 """
-✘ Comandos Disponiveis
+✘ Comandos Disponiveis 
 
 • `{i}alive`
     Check if your bot is working.
